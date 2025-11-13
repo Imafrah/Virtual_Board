@@ -1,5 +1,5 @@
-# 🎨 AirBoard - AI-Powered Touchless Whiteboard
-
+# 🎨 AirBoard - AI-Powered Touchless Whiteboar
+-----
 An interactive computer-vision-based system that lets you draw and interact using hand gestures. No mouse, keyboard, or touchscreen needed! Built with Python, OpenCV, and MediaPipe.
 
 ![AirBoard Demo](demo.gif)
