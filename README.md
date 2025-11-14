@@ -1,11 +1,6 @@
-# 🎨 AirBoard - AI-Powered Touchless Whiteboar
------
-An interactive computer-vision-based system that lets you draw and interact using hand gestures. No mouse, keyboard, or touchscreen needed! Built with Python, OpenCV, and MediaPipe.
+# 🎨 AirBoard - AI-Powered Touchless Whiteboard
 
-![AirBoard Demo](demo.gif)
-*Screenshot: AirBoard in action with hand tracking and drawing*
-
-An interactive computer-vision-based system that lets you draw, write, and interact using only hand gestures. No mouse, keyboard, or touchscreen needed!
+An interactive computer-vision-based system that lets you draw, write, and interact using only hand gestures. No mouse, keyboard, or touchscreen needed! Built with Python, OpenCV, and MediaPipe.
 
 ![AirBoard Demo](demo.gif)
 *Screenshot: AirBoard in action with hand tracking and AI response panel*
@@ -84,19 +79,6 @@ python airboard.py
 
 | Key | Action |
 |-----|--------|
-| `M` | Switch between Draw/Keyboard mode |
-| `S` | Save current sketch |
-| `C` | Clear canvas/text |
-| `R` | Reset AI response |
-| `H` | Toggle help display |
-| `Q` | Quit application |
-
-## 🎮 Controls
-
-### Keyboard Shortcuts
-
-| Key | Action |
-|-----|--------|
 | `M` | Toggle between Draw/Keyboard mode |
 | `S` | Save current sketch |
 | `C` | Clear canvas |
@@ -120,11 +102,12 @@ python airboard.py
 
 ```
 airboard/
-├── airboard.py          # Main application
-├── config.py            # Configuration settings
-├── requirements.txt     # Dependencies
-├── .env                # API keys (create this)
-├── README.md           # This file
+├── airboard.py              # Main application
+├── config.py                # Configuration settings
+├── requirements.txt         # Dependencies
+├── .env                     # API keys (create this)
+├── .gitignore               # Git ignore rules
+├── README.md                # This file
 │
 ├── modules/
 │   ├── __init__.py
@@ -134,26 +117,7 @@ airboard/
 │   ├── ai_assistant.py     # Gemini AI integration
 │   └── sketch_manager.py   # Save/load sketches
 │
-└── sketches/            # Directory for saved sketches (auto-created)
-```
-```
-airboard/
-├── airboard.py              # Main application
-├── config.py                # Configuration settings
-├── requirements.txt         # Dependencies
-├── .env                     # API keys (create this)
-├── .gitignore              # Git ignore rules
-├── README.md               # This file
-│
-├── modules/
-│   ├── __init__.py
-│   ├── hand_tracker.py     # Hand detection
-│   ├── keyboard.py         # Virtual keyboard
-│   ├── drawing.py          # Drawing canvas
-│   ├── ai_assistant.py     # AI integration
-│   └── sketch_manager.py   # Sketch storage
-│
-└── sketches/               # Saved drawings (auto-created)
+└── sketches/               # Directory for saved sketches (auto-created)
 ```
 
 ## ⚙️ Configuration (config.py)
@@ -162,14 +126,14 @@ Customize the application by modifying `config.py`:
 
 ```python
 # Camera Settings
-CAMERA_WIDTH = 1280  # Camera frame width
-CAMERA_HEIGHT = 720  # Camera frame height
-CAMERA_INDEX = 0     # Camera device index
+CAMERA_INDEX = 0          # Try 0, 1, 2 if camera not detected
+CAMERA_WIDTH = 1280       # Camera frame width (higher for better resolution)
+CAMERA_HEIGHT = 720       # Camera frame height (720p is recommended for performance)
 
 # Hand Detection
 MIN_DETECTION_CONFIDENCE = 0.7
 MIN_TRACKING_CONFIDENCE = 0.7
-MAX_NUM_HANDS = 1     # Number of hands to detect
+MAX_NUM_HANDS = 1         # Number of hands to detect
 
 # Drawing
 DEFAULT_BRUSH_SIZE = 5
@@ -185,19 +149,6 @@ HOVER_THRESHOLD = 1   # Seconds to hover before key press
 # File Paths
 SKETCH_DIR = 'sketches'  # Directory to save sketches
 THUMBNAIL_SIZE = (100, 75)  # Size of sketch thumbnails
-```
-
-Edit `config.py` to customize the application behavior:
-
-```python
-# Camera settings
-CAMERA_INDEX = 0          # Try 0, 1, 2 if camera not detected
-CAMERA_WIDTH = 1280       # Higher for better resolution
-CAMERA_HEIGHT = 720       # 720p is recommended for performance
-
-# Hand tracking settings
-MIN_DETECTION_CONFIDENCE = 0.7
-MIN_TRACKING_CONFIDENCE = 0.5
 MAX_NUM_HANDS = 2
 
 # Drawing settings

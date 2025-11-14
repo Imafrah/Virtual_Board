@@ -1,0 +1,38 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+airboard_env/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sketches (optional - uncomment if you don't want to track saved sketches)
+# sketches/*.png
+# !sketches/.gitkeep
+
+# Logs
+*.log
+
+# Distribution
+build/
+dist/
+*.egg-info/
