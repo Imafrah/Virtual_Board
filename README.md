@@ -1,7 +1,8 @@
 # 🎨 AirBoard - AI-Powered Touchless Whiteboard
 
 <div align="center">
-  <img src="demo.gif" alt="AirBoard Demo" width="80%">
+  <img src=<img width="1273" height="721" alt="Screenshot 2025-11-18 204803" src="https://github.com/user-attachments/assets/8f6b0810-2233-40f2-ad22-5eec624e783c" />
+" alt="AirBoard Demo" width="80%">
   <p><em>AirBoard in action with hand tracking and AI response panel</em></p>
 </div>
 
