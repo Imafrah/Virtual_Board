@@ -469,8 +469,7 @@ This project is open source and available under the MIT License.
 
 For issues, questions, or contributions:
 - Open an issue on GitHub
-- Email: your-email@example.com
-- Discord: your-discord
+- Email: imafrah03@gmail.com
 
 ## 🌟 Show Your Support
 
@@ -478,4 +477,4 @@ If you found this project helpful, please give it a ⭐️!
 
 ---
 
-**Made with ❤️ by [Your Name]** #
+**Made with ❤️ by Mohammed Afrah Usman** #
