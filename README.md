@@ -77,7 +77,7 @@ An interactive computer-vision-based system that lets you draw, write, and inter
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone Virtula_Board
    cd airboard
    ```
 
