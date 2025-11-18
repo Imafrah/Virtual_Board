@@ -72,7 +72,7 @@ An interactive computer-vision-based system that lets you draw, write, and inter
 ## 🎥 Demo
 
 <div align="center">
-  <a href="https://docs.google.com/videos/d/1DQy1XhCNGvuCyMCEIQ-S69K8yN38L6neeFjzVwS3e_A/edit?usp=sharing">
+  <a href="https://docs.google.com/videos/d/1hEo3dLFcjmhHAd5vGPcZYJnsPI-sBc6HhRaya_eTfc4/edit?usp=drive_link">
     <img src="https://github.com/user-attachments/assets/b3474509-e761-49e7-b4ca-21c7b8ba86e7" alt="Watch Demo" width="80%">
   </a>
 </div>
